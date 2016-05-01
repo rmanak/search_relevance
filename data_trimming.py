@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # -*- coding: utf-8 -*-
 """
 
@@ -22,7 +21,6 @@ __author__
     
 """
 
-# In[]
 from __future__ import print_function
 import pandas as pd
 from nltk.corpus import stopwords
@@ -32,14 +30,11 @@ import project_params as pp
 
 
 
-# In[]
 
 stops = stopwords.words('english')
 
 
-"I am good".replace('am' , '')
 
-# In[]
 def prog():
     print(".",end='')
     sys.stdout.flush()
@@ -64,7 +59,6 @@ stops =  stopwords.words('english')+["ft" , "lb" , "lbs" , "cm" , "gal" , "inch"
  , "Warning" , "To" , "to" , "where" , "Where" , "Which" , "which" , "whose" \
  , "Whose" , "What" , "what" , "fl" , "Fl" , "SC" , "BTU"]
  
-# In[] 
 
 
 
@@ -149,7 +143,3 @@ if __name__ == '__main__':
                               
     print("Done.")
     
-
-=======
-Empty
->>>>>>> 13f264d0a98aeba9faeb63fb340ade8284d73390
