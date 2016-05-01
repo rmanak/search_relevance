@@ -3,6 +3,7 @@
 
 __file__
 
+
     feat_eng_extended.py
     
 __description__
@@ -26,6 +27,7 @@ import project_params as pp
 
 try:
 	import cPickle
+
 except:
 	import pickle as cPickle
  
@@ -297,12 +299,13 @@ if __name__ == "__main__":
     # len dfTrain = 74067
     
     # len dfTest =  166693
+
+
     
     dfTrain1 = dfTrain[:37000].copy()
     dfTrain2 = dfTrain[37000:].copy()
     
     del dfTrain
-    
     
     
     
@@ -312,7 +315,6 @@ if __name__ == "__main__":
     dfTest4 = dfTest[120000:].copy()
     
     del dfTest
-    
     
         
     # Train 1
@@ -333,6 +335,7 @@ if __name__ == "__main__":
     dfTrain2.to_csv(pp.output_root_dir + 'Train2' + '.csv' , index=False )
     del dfTrain2    
     
+
     # Test 1
     create_features(dfTest1,'dfTest1',grams,columns)
     new_features = find_new_features(dfTest1)
@@ -342,6 +345,8 @@ if __name__ == "__main__":
     dfTest1.to_csv(pp.output_root_dir + 'Test1' + '.csv' , index=False )
     del dfTest1
     
+
+
     # Test 2
     create_features(dfTest2,'dfTest2',grams,columns)
     new_features = find_new_features(dfTest2)
@@ -369,16 +374,4 @@ if __name__ == "__main__":
     dfTest4.to_csv(pp.output_root_dir + 'Test4' + '.csv' , index=False )
     del dfTest4
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
- 
-        
-        
     
