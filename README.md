@@ -3,7 +3,7 @@ Product Search Relevance
 
 This is the code to solves the HomeDepot's data science challenge on Kaggle
  [[+]](https://www.kaggle.com/c/home-depot-product-search-relevance).
- Our solution gives the RMSE score of 0.458 and scored at top 3.5% 
+ Our solution gives the RMSE score of 0.456 and scored at top 3.5% 
  spot in the leadboard. 
 
 **Team:**
@@ -58,7 +58,10 @@ The project needs the following python packages:
 
     ``make install``
 
-(Particularly nltk_utils uses WordNet data.)
+(Particularly ``nlp_utils`` uses WordNet data.)
+
+3) The data, can be downloaded from the competition's homepage
+ [[+]](https://www.kaggle.com/c/home-depot-product-search-relevance).
 
 
 Initial Test:
@@ -66,11 +69,4 @@ Initial Test:
 
 run ``make testutils`` to check if things work!
 
-
-
-
-Run:
-----
-
-See the content of ``run_all`` for the flow of runs
 
