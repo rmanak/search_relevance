@@ -3,11 +3,13 @@
 
 __file__
 
-    model_xgb.py
+     model_xgb.py
     
 __description__
 
      XGB implementation
+     
+     some redifinition of TF-IDF features
 
     
 __author__
